@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
  
-class MyApp extends Component {
+class MyCalender extends Component {
   state = {
     date: new Date(),
   }
  
-  onChange = date => this.setState({ date })
- 
+  onChange = date => {
+    console.log(date)
+    this.setState({ date })
+    
+}
   render() {
-      console.log(this.state.date)
     return (
       <div>
         <Calendar
@@ -20,4 +22,4 @@ class MyApp extends Component {
     );
   }
 }
-export default Calendar;
+export default MyCalender;
