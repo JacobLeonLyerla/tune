@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
- 
+import '../less/calendar.less'
 class MyCalender extends Component {
   state = {
     date: new Date(),
