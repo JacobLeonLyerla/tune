@@ -48,5 +48,6 @@ body {
   margin: 0 auto;
 }
 .Sample__container__content .react-calendar__tile:active {
-  background: red;
+  background: #006edc;
+  color: white;
 }
