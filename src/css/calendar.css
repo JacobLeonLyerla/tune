@@ -47,3 +47,6 @@ body {
 .Sample__container__content .react-calendar {
   margin: 0 auto;
 }
+.Sample__container__content .react-calendar__tile:active {
+  background: red;
+}
