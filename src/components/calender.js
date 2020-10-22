@@ -18,7 +18,7 @@ class MyCalender extends Component {
         </header>
         <div className="Sample__container">
           <main className="Sample__container__content">
-            <Calendar onChange={this.onChange} value={value} activeStartDate={new Date(207, 0, 1)} />
+            <Calendar onChange={this.onChange} value={value}/>
           </main>
         </div>
       </div>
