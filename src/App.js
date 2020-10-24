@@ -6,12 +6,18 @@ function App() {
   console.log(routes)
   return (
     <div className="App">
-      {routes()}
+    
      
       <Link style={{ textDecoration: "none", color: "black" }} to="/test">
 
-            <button> Test </button>
+            <button> ON </button>
+
         </Link>
+        <Link style={{ textDecoration: "none", color: "black" }} to="/">
+
+<button> OFF </button>
+
+</Link>  {routes()}
     </div>
   );
 }
