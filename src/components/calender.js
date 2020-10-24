@@ -13,10 +13,9 @@ class MyCalender extends Component {
     const { value } = this.state;
     return (
       <div className="Sample">
-
         <div className="Sample__container">
           <main className="Sample__container__content">
-            <Calendar onChange={this.onChange} value={value}/>
+            <Calendar onChange={this.onChange} value={value} />
           </main>
         </div>
       </div>
