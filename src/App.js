@@ -2,6 +2,7 @@ import React from "react";
 import { routes } from "./helpers/appRouters";
 import { Link } from "react-router-dom";
 import "./App.css";
+import TuneProvider, {TuneContext} from "./contexts/tuneProvider"
 function App() {
   console.log(routes);
   return (
