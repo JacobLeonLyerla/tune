@@ -1,9 +1,8 @@
-import React, { Component } from "react ";
+import { createContext } from 'react';
 
-export const TuneContext = React.createContext({});
+const TuneContext = createContext({
+  test: false,
+  testfunction: () => {},
+});
 
-class TuneProvider extends Component{
-
-
-}
-export default TuneProvider
+export default TuneContext;
