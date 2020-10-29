@@ -3,5 +3,5 @@ import Calendar from "../components/calender";
 import { Route } from "react-router-dom";
 
 export function routes() {
-  return <Route exact path="/Test" render={() => <Calendar />} />;
+  return <Route exact path="/calendar" render={() => <Calendar />} />;
 }
