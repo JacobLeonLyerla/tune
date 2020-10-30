@@ -9,26 +9,27 @@ function App() {
   const [address, setAddress] = useState("/calendar");
   const [icon, setIcon] = useState(faToggleOff);
 
-  const changeIcon=()=>{
-  if(address === "/calendar"){
-    setAddress("/")
-    setIcon(faToggleOn)
-  }else{
-    setAddress("/calendar")
-    setIcon(faToggleOff)
-  }
-    console.log(icon,address)
-  }
+  const changeIcon = () => {
+    if (address === "/calendar") {
+      setAddress("/");
+      setIcon(faToggleOn);
+    } else {
+      setAddress("/calendar");
+      setIcon(faToggleOff);
+    }
+    console.log(icon, address);
+  };
 
   return (
     // I want to figure out how to make the button toggle instead of needing two buttons
     <div className="App">
-      
-      <Link onClick={()=>changeIcon()} style={{ textDecoration: "none", color: "black" }} to={address}>
+      <Link
+        onClick={() => changeIcon()}
+        style={{ textDecoration: "none", color: "black" }}
+        to={address}
+      >
         <FontAwesomeIcon icon={icon} />
       </Link>{" "}
-    
-         
       {routes()}
     </div>
   );
