@@ -9,6 +9,8 @@ body {
 .Sample {
   width: 30%;
   height: 30%;
+  margin: 0 auto;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.288);
 }
 .Sample input,
 .Sample button {
