@@ -6,7 +6,7 @@ function MyCalender() {
   const [date, setDate] = useState(new Date());
 
   const onChange = (date) => {
-    console.log(date);
+ 
     setDate(date);
   };
 
@@ -14,7 +14,7 @@ function MyCalender() {
     <div className="Sample">
       <div className="Sample__container">
         <main className="Sample__container__content">
-          <Calendar onChange={onChange} />
+          <Calendar onChange={onChange} value={date} />
         </main>
       </div>
     </div>
