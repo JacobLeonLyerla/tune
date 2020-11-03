@@ -1,8 +1,7 @@
 import { createContext } from "react";
 
 const TuneContext = createContext({
-  test: false,
-  testfunction: () => {},
+  color:"red"
 });
 
 export default TuneContext;
