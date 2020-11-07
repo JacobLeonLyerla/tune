@@ -1,12 +1,10 @@
 import { createContext } from "react";
 
 const TuneContext = createContext({
-  color:"red",
-  testfunction: () =>{
-    return testParam
+  color: "red",
+  testfunction: (w) => {
+    return w ? w : "test failed";
   },
 });
-
-const testParam = "test param"
 
 export default TuneContext;
