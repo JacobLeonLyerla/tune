@@ -13,7 +13,7 @@ function MyCalender() {
 
   return (
     <div className="Sample">
-      <div>{test.color}</div>
+      <div>{test.testfunction()}</div>
       <div className="Sample__container">
         <main className="Sample__container__content">
           <Calendar onChange={onChange} value={date} />
